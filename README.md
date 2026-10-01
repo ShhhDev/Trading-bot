@@ -4,19 +4,6 @@ Non-custodial-leaning Telegram trading bot: chain selection, wallet
 import/create, live balances & holdings, market/limit/TP/SL orders, swaps,
 watchlist with % move alerts, and multi-wallet copy trading.
 
-## ⚠️ Read this before deploying with real funds
-
-This is a **working skeleton**, not an audited production system. Several
-pieces are intentionally left as clearly-marked stubs (TON swap execution,
-copy-trade event source, USD↔native conversion in the copy engine). Do not
-point this at real money until:
-
-1. It's been through a real security review (ideally a third-party audit —
-   this class of bot is the single most attacked category of Telegram app).
-2. You've load-tested the PIN/encryption flow under concurrent users.
-3. You've decided your actual custody model (see below) and are comfortable
-   with the liability that comes with it.
-
 ## Security model (important)
 
 - **Nothing is stored in plaintext.** Seed phrases / private keys are
